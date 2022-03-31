@@ -11,10 +11,10 @@ namespace Kata
         public Coordinate CurrentCoordinate
         {
             get { return _currentCoordinate; }
-            set { _currentCoordinate = _planet.MapCoordinateToPlanet(value); }
+            internal set { _currentCoordinate = _planet.MapCoordinateToPlanet(value); }
         }
 
-        public FacingDirection CurrentFacingDirection { get; set; }
+        public FacingDirection CurrentFacingDirection { get; internal set; }
 
         private Rover(
             Coordinate startingCoordinate,
